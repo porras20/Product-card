@@ -1,0 +1,121 @@
+html, body, main{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+p{
+    font-size: 1rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 320px 320px;
+}
+.card{
+    border: 1px solid black;
+}
+
+.left{
+    background-color: #000;
+}
+.left span{
+    color: rgba(128, 128, 128, 0.613);
+    font-size: 7rem;
+    font-weight: 800;
+    margin: 0 1rem;
+    display: block;
+}
+
+.left-img{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+.left-img img{
+    width: 45rem;
+    rotate: -25deg;
+}
+.right{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.right-header h2{
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    display: inline;
+}
+.right-header{
+   margin: 1rem 2rem
+}
+
+.right-header p{
+    color: gray;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.right-main{
+    margin: 0 1rem 0 4rem;
+}
+
+.right-main p{
+    display: inline;
+}
+.colors{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.colors div{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+/* .colors div:hover{
+    cursor: pointer;
+    border: 3px solid black;
+} */
+.colors .black{
+    background-color: black;
+}
+.colors .red{
+    background-color: red;
+}
+.colors .orange{
+    background-color: orange;
+}
+
+.right-footer{
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-footer h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.right-footer button{
+    width: 100px;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
