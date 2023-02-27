@@ -1,39 +1,36 @@
 html, body, main{
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
     height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
 }
-
 p{
     font-size: 1rem;
 }
 .container{
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .cards{
     display: grid;
-    max-width: 1000px;
     grid-template-columns: 320px 320px;
-}
-.card{
-    border: 1px solid black;
+    max-width: 1000px;
 }
 
 .left{
     background-color: #000;
+    transition: 0.5s ease;
 }
 .left span{
     color: rgba(128, 128, 128, 0.613);
+    display: block;
     font-size: 7rem;
     font-weight: 800;
     margin: 0 1rem;
-    display: block;
 }
 
 .left-img{
@@ -43,18 +40,19 @@ p{
 }
 
 .left-img img{
-    width: 45rem;
     rotate: -25deg;
+    width: 45rem;
 }
 .right{
+    background-color: #fff;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
 }
 .right-header h2{
+    display: inline;
+    font-size: 2.8rem;
     font-weight: 800;
     text-transform: capitalize;
-    font-size: 2.8rem;
-    display: inline;
 }
 .right-header{
    margin: 1rem 2rem
@@ -62,8 +60,8 @@ p{
 
 .right-header p{
     color: gray;
-    text-transform: uppercase;
     display: inline;
+    text-transform: uppercase;
 }
 
 .right-main{
@@ -79,11 +77,11 @@ p{
     margin-top: 2rem;
 }
 .colors div{
-    height: 2rem;
-    width: 2rem;
     border-radius: 50%;
-    margin: 0.5rem;
     cursor: pointer;
+    height: 2rem;
+    margin: 0.5rem;
+    width: 2rem;
 }
 /* .colors div:hover{
     cursor: pointer;
@@ -100,10 +98,10 @@ p{
 }
 
 .right-footer{
-    margin: 0 2rem;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    margin: 0 2rem;
 }
 
 .right-footer h3{
@@ -112,10 +110,14 @@ p{
 }
 
 .right-footer button{
-    width: 100px;
-    padding: 1rem;
+    background-color: black;
     border-radius: 20px;
     color: #fff;
-    background-color: black;
     cursor: pointer;
+    padding: 1rem;
+    width: 100px;
+}
+
+.active{
+    border: 2px solid black;
 }
